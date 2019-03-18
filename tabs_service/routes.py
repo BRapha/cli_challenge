@@ -26,7 +26,7 @@ def save_tab():
 @app.route('/tabs/<object_id:tab_id>', methods=['GET'])
 def get_tab(tab_id):
     tab = mongo.db.tabs.find_one({'_id': tab_id})
-    return jsonify(tab) if tab else "", 204
+    return (jsonify(tab), 200) if tab else ("", 204)
 
 
 @app.route('/tabs/<object_id:tab_id>', methods=['PUT'])
