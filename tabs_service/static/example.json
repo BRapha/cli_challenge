@@ -1,0 +1,18 @@
+{
+	"name" : "Disease history",
+	"description" : "The chronic of the disease at hand",
+	"dataPoints" : [
+      {
+        "dataType" : "selection",
+        "label" : "ECOG_SCORE",
+        "description" : "ECOC score at the start of IO",
+		"options": ["0","1","2","3","4","5","unknown"]
+      },
+      {
+        "dataType" : "text",
+		"label" : "ECOG_HB_LEVEL",
+        "placeholder" : "g/dL",
+        "description" : "Hemogolobin level at the start of IO (g/dL)"
+      }
+    ]
+}
